@@ -1,4 +1,6 @@
-class PopupNewPlace extends Popup  {
+import Popup from "./popup.js";
+
+export default class PopupNewPlace extends Popup  {
   constructor(handle, cardList) {
     super(handle);
     this.formNewPlace = handle;

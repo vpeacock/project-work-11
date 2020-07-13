@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor(name, link, callShowImage) {
 	  this.callShowImage = callShowImage;
     this.name = name;

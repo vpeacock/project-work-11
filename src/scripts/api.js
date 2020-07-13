@@ -1,4 +1,6 @@
-class Api {
+
+
+export default class Api {
   constructor(parameters) {
     this.parameters = parameters;
   }

@@ -1,0 +1,16 @@
+@import url('_form-size/popup__content_form-size_large.css');
+@import url('_form-size/popup__content_form-size_medium.css');
+
+.popup__content {
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content {
+    width: calc(100% - 60px);
+  }
+}

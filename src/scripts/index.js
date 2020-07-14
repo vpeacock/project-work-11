@@ -1,3 +1,14 @@
+import "../pages/style.css";
+import Api from "./api.js";
+import Card from "./card.js";
+import CardList from "./card-list.js";
+import FormValidator from "./form-validator.js";
+import PopupEditUser from "./popup-edit-user.js";
+import PopupNewPlace from "./popup-new-place.js";
+import PopupShowImage from "./popup-show-image.js";
+import UserInfo from "./user-info.js";
+
+
 (function() { 
 // ==================== global variables ============================ 
 
@@ -12,9 +23,12 @@ const popupShowImage = document.querySelector('.popup-showimage');
 const formPlace = document.forms.newplace;
 const formUser = document.forms.newuser;
 
+const serverUrl =
+  NODE_ENV === "development" ? "http://praktikum.tk" : "https://praktikum.tk";
+  console.log(serverUrl);
 const parameters = {
-  url: 'https://praktikum.tk/cohort11',
-  headers: {
+  url: `${serverUrl}/cohort11`,
+    headers: {
     authorization: 'c3377a60-f8c1-4472-a3ff-3c97c31e1d0c',
     'Content-Type': 'application/json' 
   }
